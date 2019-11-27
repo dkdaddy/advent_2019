@@ -6,9 +6,9 @@
 
 body {
   background-image: url('./media/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
 }
 .row {
     display: flex;
@@ -70,83 +70,72 @@ body {
 	transform: rotateY(180deg);
 } 
     </style>
+    <script>
+        const images = [
+            'bells',
+            'reindeer',
+            'sack',
+            'santa',
+            'snowman',
+            'stocking',
+            'santa2',
+            'present',
+            'penguin',
+            'bells',
+            'reindeer',
+            'sack',
+            'santa',
+            'snowman',
+            'stocking',
+            'santa2',
+            'present',
+            'penguin',
+            'bells',
+            'reindeer',
+            'sack',
+            'santa',
+            'snowman',
+            'stocking',
+            'santa2',
+            'present',
+            'penguin',
+        ];
+        function getImage(day) {
+            return `./media/${images[day-1]}.webp`;
+        }
+        function load() {
+            console.log('loaded');
+            var calendar = document.getElementById('container');
 
+            const ROWS = 4;
+            const COLS = 6;
+            let html = '';
+            let day = 1;
+            for (let r = 0; r < ROWS; r++) {
+                html += `<div class="row">`;
+                for (let c = 0; c < COLS; c++) {
+                    html += `<div class="flip-container">`;
+                    html += `<div class="flipper">`;
+                    html += `<div class="front">`;
+                    html += `<img src="${getImage(day)}" height='180px' width='180px'></img>`;
+                    html += `<div class='day_of_month'>${day++}</div>`;
+                    html += `</div>`;
+                    html += `<div class="back">`;
+                    html += `<img src="./media/under-construction.png" height='180px' width='180px'></img>`;
+                    //                    html += `<div class='clue'>Feeling ill? Visit the hospital</div>`;
+                    html += `</div>`;
+                    html += `</div>`;
+                    html += `</div>`;
+                }
+                html += `</div>`;
+            }
+            calendar.innerHTML = html;
+        }
+    </script>
 </head>
 
-<body>
-    <div class='calendar'>
-        <div class='row'>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img src="./media/present.webp" height='180px' width='180px'></img>
-                        <div class='day_of_month'>1</div>
-                    </div>
-                    <div class="back">
-                        <div class='clue'>Feeling ill? Visit the hospital</div>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img src="./media/santa.webp" height='180px' width='180px'></img>
-                        <div class='day_of_month'>2</div>
-
-                    </div>
-                    <div class="back">
-                        <img src="./media/under-construction.png" height='180px' width='180px'></img>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img src="./media/bells.webp" height='180px' width='180px'></img>
-                        <div class='day_of_month'>3</div>
-                    </div>
-                    <div class="back">
-                        <div class='clue'>clue 3</div>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img src="./media/snowman.webp" height='180px' width='180px'></img>
-                        <div class='day_of_month'>4</div>
-
-                    </div>
-                    <div class="back">
-                        <div class='clue'>clue 4</div>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img src="./media/reindeer.webp" height='180px' width='180px'></img>
-                        <div class='day_of_month'>5</div>
-                    </div>
-                    <div class="back">
-                        <div class='clue'>clue 5</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class='row'>
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                <div class="flipper">
-                    <div class="front">
-                        <img src="./media/santa2.webp" height='180px' width='180px'></img>
-                        <div class='day_of_month'>6</div>
-                    </div>
-                    <div class="back">
-                        <div class='clue'>clue 6</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<body onload="load()">
+    <div class='calendar' id='container'>
     </div>
 </body>
 

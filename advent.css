@@ -1,0 +1,75 @@
+body {
+    background-image: url('./media/bg.jpg');
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+}
+
+.row {
+    display: flex;
+}
+
+.day_of_month {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    top: -100px;
+    z-index: 2;
+}
+
+.clue {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 60px;
+}
+
+.flip-container {
+    perspective: 1000px;
+    /* border:1px solid black ; */
+    margin: 20px;
+}
+
+/* flip the pane when hovered */
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 180px;
+    height: 180px;
+}
+
+/* flip speed goes here */
+
+.flipper {
+    transition: 1.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}

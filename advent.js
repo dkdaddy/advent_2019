@@ -33,16 +33,20 @@ const james = [
     `enigmatic cuisine container`,
 ];
 const ben = [
-    `Thor's brother liked mustard! Who knew!`
+    `Thor's brother liked mustard! Who knew! 907810`,
+    'Did you hear the news about Colonel Mustard? 321706'
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;
 }
 function getClue(day) {
-    const today = (new Date()).getDate()-20; // todo -20 hack
-    if (day>today) return 'X';
+    const now = new Date();
+    const today = now.getDate();
+    const month = now.getMonth();
+    if (month<11 || day>today) 
+        return ''; // no clue until the day
     const href = window.location.href;
-    const clues = href.indexOf('ja') > 0 ? james : ben;
+    const clues = href.indexOf('james') > 0 ? james : ben;
     return clues[day - 1];
 }
 function load() {

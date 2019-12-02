@@ -30,11 +30,15 @@ const images = [
 const james = [
     `j1.jpg`,
     `j2.jpg`,
+    `j3.jpg`,
+    `j4.jpg`,
+    `j5.jpg`,
     `enigmatic cuisine container`,
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
-    'Did you hear the news about Colonel Mustard? 321706'
+    'Did you hear the news about Colonel Mustard? 321706',
+    'Where did the rain in Spain fall mainly? QT839200340GB'
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

@@ -38,7 +38,8 @@ const james = [
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
     'Did you hear the news about Colonel Mustard? 321706',
-    'Where did the rain in Spain fall mainly? QT839200340GB'
+    'Where did the rain in Spain fall mainly? QT839200340GB',
+    'Feeling unwell? Maybe you should visit the hospital. 000194'
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

@@ -41,7 +41,8 @@ const ben = [
     'Where did the rain in Spain fall mainly? QT839200340GB',
     'Feeling unwell? Maybe you should visit the hospital. 000194',
     'Still ill? Try again. 455033',
-    `Martell or Lieberher, IT's all the same. 899558`
+    `Martell or Lieberher, IT's all the same. 899558`,
+    'You will need to Co-Operate again for this one. 300350'
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

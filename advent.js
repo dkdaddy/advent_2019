@@ -34,7 +34,8 @@ const james = [
     `j4.jpg`,
     `j5.jpg`,
     `enigmatic cuisine container`,
-    '12.2cm does not seem far to wave'
+    '12.2cm does not seem far to wave',
+    'Need a fuse?'
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -43,7 +44,8 @@ const ben = [
     'Feeling unwell? Maybe you should visit the hospital. 000194',
     'Still ill? Try again. 455033',
     `Martell or Lieberher, IT's all the same. 899558`,
-    'You will need to Co-Operate again for this one. 300350'
+    'You will need to Co-Operate again for this one. 300350',
+    'What did the Dr say to the man who swallowed a coin? Any change?'
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

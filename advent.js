@@ -36,7 +36,8 @@ const james = [
     `enigmatic cuisine container`,
     '12.2cm does not seem far to wave',
     'Need a fuse?',
-    'j9.jpg'
+    'j9.jpg',
+    `You'll need to paradiddle`
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -46,8 +47,9 @@ const ben = [
     'Still ill? Try again. 455033',
     `Martell or Lieberher, IT's all the same. 899558`,
     'You will need to Co-Operate again for this one. 300350',
-    'What did the Dr say to the man who swallowed a coin? Any change?',
-    'album.universally.cowboy'
+    'What did the Dr say to the man who swallowed a coin? Any change? 253554',
+    'album.universally.cowboy',
+    `The MIB's rapping son's name mis-spelt. 017592`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

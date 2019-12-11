@@ -37,7 +37,8 @@ const james = [
     '12.2cm does not seem far to wave',
     'Need a fuse?',
     'j9.jpg',
-    `You'll need to paradiddle`
+    `You'll need to paradiddle`,
+    `2.616e2 cycles per second`
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -49,7 +50,8 @@ const ben = [
     'You will need to Co-Operate again for this one. 300350',
     'What did the Dr say to the man who swallowed a coin? Any change? 253554',
     'album.universally.cowboy',
-    `The MIB's rapping son's name mis-spelt. 017592`
+    `The MIB's rapping son's name mis-spelt. 017592`,
+    '127.0.0.1'
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

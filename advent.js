@@ -39,6 +39,8 @@ const james = [
     'j9.jpg',
     `You'll need to paradiddle`,
     `2.616e2 cycles per second`
+    `when is a door not a door?`,
+    `Famous cricketer looks behind to 1880`,
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -51,7 +53,9 @@ const ben = [
     'What did the Dr say to the man who swallowed a coin? Any change? 253554',
     'album.universally.cowboy',
     `The MIB's rapping son's name mis-spelt. 017592`,
-    '127.0.0.1'
+    '127.0.0.1',
+    `enigmatic cuisine container`,
+    `12.2cm does not seem far to wave`,
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

@@ -38,9 +38,9 @@ const james = [
     'Need a fuse?',
     'j9.jpg',
     `You'll need to paradiddle`,
-    `2.616e2 cycles per second`
+    `2.616e2 cycles per second`,
     `when is a door not a door?`,
-    `Famous cricketer looks behind to 1880`,
+    `Famous cricketer looks behind to 1880`
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -55,7 +55,7 @@ const ben = [
     `The MIB's rapping son's name mis-spelt. 017592`,
     '127.0.0.1',
     `enigmatic cuisine container`,
-    `12.2cm does not seem far to wave`,
+    `12.2cm does not seem far to wave`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

@@ -40,7 +40,10 @@ const james = [
     `You'll need to paradiddle`,
     `2.616e2 cycles per second`,
     `when is a door not a door?`,
-    `Famous cricketer looks behind to 1880`
+    `Famous cricketer looks behind to 1880`,
+    `Turning the tables leads to a nutty outcome`,
+    `Don't let the pirate sink you`,
+    `j16.png`
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -55,7 +58,10 @@ const ben = [
     `The MIB's rapping son's name mis-spelt. 017592`,
     '127.0.0.1',
     `enigmatic cuisine container`,
-    `12.2cm does not seem far to wave`
+    `12.2cm does not seem far to wave`,
+    `When Ben met Coleman`,
+    `Don't let the pirate sink you`,
+    `j5.png`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

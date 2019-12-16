@@ -61,7 +61,7 @@ const ben = [
     `12.2cm does not seem far to wave`,
     `When Ben met Coleman`,
     `Don't let the pirate sink you`,
-    `j5.png`
+    `j5.jpg`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;
@@ -97,7 +97,7 @@ function load() {
             html += `<div class="back">`;
             const clue = getClue(day);
             if (clue) {
-                if (clue.indexOf('.jpg')>0) 
+                if (clue.indexOf('.jpg')>0 || clue.indexOf('.png')>0 ) 
                     html += `<img src="./media/${clue}" height='180px' width='180px'></img>`;
                 else
                     html += `<div class='clue'>${clue}</div>`;

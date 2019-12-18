@@ -43,7 +43,9 @@ const james = [
     `Famous cricketer looks behind to 1880`,
     `Turning the tables leads to a nutty outcome`,
     `Don't let the pirate sink you`,
-    `j16.png`
+    `j16.png`,
+    `j17.png`
+    `only time will tell`,
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -61,7 +63,9 @@ const ben = [
     `12.2cm does not seem far to wave`,
     `When Ben met Coleman`,
     `Don't let the pirate sink you`,
-    `j5.jpg`
+    `j5.jpg`,
+    `b17.png`,
+    `The door to nowhere`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

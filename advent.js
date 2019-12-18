@@ -44,7 +44,7 @@ const james = [
     `Turning the tables leads to a nutty outcome`,
     `Don't let the pirate sink you`,
     `j16.png`,
-    `j17.png`
+    `j17.png`,
     `only time will tell`,
 ];
 const ben = [

@@ -46,7 +46,8 @@ const james = [
     `j16.png`,
     `j17.png`,
     `only time will tell`,
-    `Don't let your fan be left behind`
+    `Don't let your fan be left behind`,
+    `HP rests at hedge 1 Wood `
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -67,7 +68,8 @@ const ben = [
     `j5.jpg`,
     `b17.png`,
     `The door to nowhere`,
-    `Don't get bowled en placard`
+    `Don't get bowled en placard`,
+    `Don't get trapped`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;

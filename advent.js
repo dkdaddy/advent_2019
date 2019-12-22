@@ -48,7 +48,10 @@ const james = [
     `only time will tell`,
     `Don't let your fan be left behind`,
     `HP rests at hedge 1 Wood `,
-    `You'll need to co-operate. 388___`
+    `You'll need to co-operate. 388___`,
+    `How to make a pizza rustic?`,
+    `gm1.png`,
+    `gm3.png`
 ];
 const ben = [
     `Thor's brother liked mustard! Who knew! 907810`,
@@ -71,7 +74,10 @@ const ben = [
     `The door to nowhere`,
     `Don't get bowled en placard`,
     `Don't get trapped`,
-    `You'll need to co-operate. ___510`
+    `You'll need to co-operate. ___510`,
+    `Contrate on 28`,
+    `gm2.png`,
+    `gm4.png`
 ];
 function getImage(day) {
     return `./media/${images[day - 1]}.webp`;
